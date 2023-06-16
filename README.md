@@ -90,7 +90,7 @@ You can deploy this project using [Github Pages](https://docs.github.com/en/page
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/wolterbwambale/).
+Feel free to check the [issues page](https://github.com/wolterbwambale/bookstore-app/issues).
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
