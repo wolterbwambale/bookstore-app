@@ -5,8 +5,10 @@
 # 📗 Table of Contents
 
 - [� Table of Contents](#-table-of-contents)
-- [📖 Math-Magicine:Project: Math Magicine App](#-math-magicineproject-math-magicine-app)
+- [📖 BookStore:Bookstore App](#--Bookstoreproject -Bookstore-aPP)
   - [🛠 Built With ](#-built-with-)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
     - [Install](#install)
@@ -25,11 +27,20 @@
 **BookStore** This is the BookStore website where you can you add,delete book and category a book.
 
 
+### Key Features <a name="key-features"></a>
+
+- **Linters SetUp**
+- **Follow HTMl and javascript best practice**
+- **Creationg component**
+- **Follow Git flow**
+- **initialising Bookstore**
+
 ## 🛠 Built With <a name="built-with"></a>
    React
    CSS
    ES6
    JavaScript
+
 
 
 <!-- GETTING STARTED -->
@@ -80,6 +91,25 @@ To to build for the production, execute the following command:
 ### Deployment
 
 You can deploy this project using [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+👤 **Bwambale**
+  
+- GitHub: [Bwambale](https://github.com/wolterbwambale/bookstore)
+- LinkedIn: [Bwambale](https://www.linkedin.com/in/bwambale-benny-wolter-a9284925a/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **initialize project with components**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
