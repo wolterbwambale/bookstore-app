@@ -108,7 +108,8 @@ You can deploy this project using [Github Pages](https://docs.github.com/en/page
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **initialize project with components**
+- [ ] **Mobile version**
+- [ ] **Desktop version**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
