@@ -4,11 +4,11 @@ const categorySlice = createSlice({
   name: 'category',
   initialState: {
     categories: [],
-    status: 'Under construction',
   },
   reducers: {
-    addCategory(state, action) {
-      state.categories.push(action.payload);
+    checkStatus: (state, action) => {
+      state.categories = action.payload === 'Under construction'
+        ? 'Under construction' : state.categories;
     },
     removeCategory(state, action) {
       state.categories = state.categories.filter((category) => category !== action.payload);
