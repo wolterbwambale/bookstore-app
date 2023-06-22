@@ -1,19 +1,20 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import CategoriesShow from './logic/categoriesShow';
+import BookShow from './logic/BookShow';
 import Navbar from './components/Navbar';
-import Categories from './components/categories';
-import Books from './components/books';
 
 function App() {
   return (
-    <>
+    <Provider store={store}>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Books />} />
-        <Route path="/categories" element={<Categories />} />
-
+        <Route path="/" element={<BookShow />} />
+        <Route path="/categories" element={<CategoriesShow />} />
       </Routes>
-    </>
+    </Provider>
   );
 }
 
