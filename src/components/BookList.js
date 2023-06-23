@@ -1,18 +1,18 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Books from './Book';
+import Book from './Book';
 
 const BookList = () => {
-  const books = useSelector((state) => state.book);
+  const booklist = useSelector((state) => state.book.booklist);
 
-  if (!books || books.length === 0) {
+  if (!booklist || booklist.length === 0) {
     return <p>No books available.</p>;
   }
 
   return (
     <>
-      {books.map((book) => (
-        <Books key={book.id} item={book} />
+      {booklist.map((book) => (
+        <Book key={book.item_id} item={book} />
       ))}
     </>
   );
