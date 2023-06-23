@@ -18,8 +18,7 @@ const Book = ({ item }) => {
           <h3 className="title">{item.title}</h3>
           <span className="author">{item.author}</span>
         </div>
-
-        <button type="button">Comment</button>
+        <button type="button">comment</button>
         <button type="button" onClick={handleRemove}>
           Remove
         </button>

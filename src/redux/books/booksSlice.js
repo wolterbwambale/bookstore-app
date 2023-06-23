@@ -10,12 +10,8 @@ const initialState = {
 };
 
 export const fetchData = createAsyncThunk('books/fetchData', async () => {
-  try {
-    const response = await axios.get(urlBase);
-    return response.data;
-  } catch (error) {
-    throw new Error(`Failed to fetch data: ${error.message}`);
-  }
+  const response = await axios.get(urlBase);
+  return response.data;
 });
 
 export const addBookToApi = createAsyncThunk('books/addBookToApi', async (bookInfo) => {
@@ -76,8 +72,16 @@ const bookSlice = createSlice({
         state.isLoading = false;
         state.error = action.error.message;
       })
+      .addCase(removeBook.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
       .addCase(removeBook.fulfilled, (state, action) => {
-        state.booklist = state.booklist.filter((book) => book.item_id !== action.payload);
+        state.isLoading = false;
+        // Ensure that state.booklist is an array
+        if (Array.isArray(state.booklist)) {
+          state.booklist = state.booklist.filter((book) => book.item_id !== action.payload);
+        }
       })
       .addCase(removeBook.rejected, (state, action) => {
         state.isLoading = false;
