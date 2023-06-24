@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { addNewBook } from '../redux/books/booksSlice';
 
 function InputForm() {
   const [title, setTitle] = useState('');
@@ -9,18 +9,22 @@ function InputForm() {
 
   const addSubmit = (e) => {
     e.preventDefault();
-    const id = `item${Math.random()}`;
-    dispatch(addBook({ id, title, author }));
-    setTitle('');
-    setAuthor('');
+    dispatch(addNewBook({ title, author }))
+      .then(() => {
+        setTitle('');
+        setAuthor('');
+      })
+      .catch((error) => {
+        <p>{error}</p>;
+      });
   };
 
   return (
     <div className="Form">
       <span className="add-newbook">ADD NEW BOOK</span>
-      <form action="" onSubmit={addSubmit}>
+      <form onSubmit={addSubmit}>
         <input
-          className="title=in"
+          className="title-in"
           placeholder="Book title"
           type="text"
           value={title}
