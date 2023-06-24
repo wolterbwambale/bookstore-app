@@ -16,9 +16,11 @@ body {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
-  color: rgb(91, 91, 247);
+  color: #0290ff;
+  margin-right: 19px;
+  margin-left: 11%;
 }
 
 ul {
@@ -38,12 +40,18 @@ li {
 
 .user-icon {
   font-size: 20px;
-  color: rgb(91, 91, 247);
-  margin-left: 62%;
+  color: #0290ff;
+  margin-left: 47%;
 }
 
 .cat {
   color: #ccc;
+}
+
+.cat-h {
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 /* css form */
@@ -96,7 +104,7 @@ button.submit:hover {
 
 .card {
   background: #fff;
-  padding: 7px;
+  padding: 16px;
   margin: 15px auto;
   width: 75%;
   border-radius: -0.5rem;
