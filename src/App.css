@@ -2,4 +2,213 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: #ccc;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+
+  /* justify-content: space-between; */
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0290ff;
+  margin-right: 19px;
+  margin-left: 11%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin-right: 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.user-icon {
+  font-size: 20px;
+  color: #0290ff;
+  margin-left: 47%;
+}
+
+.cat {
+  color: #ccc;
+}
+
+.cat-h {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+/* css form */
+.Form {
+  margin-left: 163px;
+}
+
+.add-newbook {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+}
+
+input,
+select {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 25%;
+}
+
+select {
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat right 8px center;
+  background-size: 16px 16px;
+  padding-right: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+button.submit {
+  padding: 6px 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+button.submit:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  background: #fff;
+  padding: 16px;
+  margin: 15px auto;
+  width: 75%;
+  border-radius: -0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.straight-line {
+  border-top: 1px solid black;
+}
+
+.progress-spinner {
+  position: relative;
+  width: 46px;
+  height: 46px;
+}
+
+.progress-wheel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 10px solid lightgray;
+  border-top-color: blue;
+  animation: spin 4s linear infinite;
+  animation-play-state: paused;
+  margin-top: 31px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(290deg);
+  }
+}
+
+.progress-text {
+  position: absolute;
+  top: 41px;
+  right: -79px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.complete-text {
+  position: absolute;
+  top: 66px;
+  right: -93px;
+  font-size: 15px;
+  color: gray;
+}
+
+button {
+  border: none;
+  color: rgba(94, 102, 190, 0.892);
+  cursor: pointer;
+  border-right: 1px solid #ccc;
+  background-color: transparent;
+}
+
+button:last-child {
+  border-right: none;
+}
+
+.progress-info {
+  border-left: 2px solid #ccc;
+  padding-left: 50px;
+  padding-right: 53px;
+}
+
+.update-btn {
+  color: #ccc;
+  background: rgb(105, 105, 245);
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.chapter {
+  font-size: 10px;
+  color: #ccc;
+}
+
+h4 {
+  margin-top: -5px;
+}
+
+.title {
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.author-book {
+  margin-top: -25px;
+  color: rgba(94, 102, 190, 0.892);
+  font-size: 12px;
 }

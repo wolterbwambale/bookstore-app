@@ -16,7 +16,7 @@ const Book = ({ item }) => {
         <div className="app-detail">
           <span className="cat">{item.category}</span>
           <h3 className="title">{item.title}</h3>
-          <span className="author">{item.author}</span>
+          <h3 className="author-book">{item.author}</h3>
         </div>
         <button type="button">comment</button>
         <button type="button" onClick={handleRemove}>

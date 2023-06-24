@@ -30,13 +30,12 @@ function InputForm() {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <input
-          className="author-in"
-          placeholder="Book author"
-          type="text"
-          value={author}
-          onChange={(e) => setAuthor(e.target.value)}
-        />
+        <select className="category-in">
+          <option value="">category</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-fiction">Non-fiction</option>
+          <option value="Science">Science</option>
+        </select>
         <button className="submit" type="submit">
           ADD BOOK
         </button>
